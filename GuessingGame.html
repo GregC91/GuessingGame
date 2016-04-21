@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <!-- Bootstrap inserted into html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="guessCSS.css">
 </head>
-<body>
-    <p>I'm thinking of a number, have a guess.</p>
-    <form>
-        <input type="number" id= "UserGuess"/>
-   </form>
-   <div><button id="compare"> Let me check </button></div>
-   <div id="check"></div>
     
+    
+<body>
+        <!-- Start of container-->
+        <div class="container">
+  
+        <!-- Start of first row -->
+        <div class="row">
+        <div class="col-sm-12">
+                <h1>I want to a play a game....</h1>
+        </div>
+        </div>
+        <!-- End of first row -->
+        
+        
+        
+        
+        
+        <!-- Start of second row -->
+        <div class="row">
+        <div class="col-sm-12">
+                <p>Guess the number I'm thinking to stay alive!</p>
+        </div>
+        </div>
+        <!-- End of second row -->
+        
+        
+        
+        
+        
+        <!-- Start of third row -->
+        <div class="row">
+        <div class="col-sm-6">
+                <form>
+                    <!--<input type="number" id= "UserGuess">-->
+                    <input type="text" id="guess">
+                </form>
+        </div>
+        
+            <div class="col-sm-6">
+            <div><button  onclick="compare()"id="compare" type="button" class="btn btn-primary"> Submit your answer  
+            <a href="#" data-toggle="tooltip" title="Hooray!">Choose Wisely</a> </button></div>
+        </div>
+        </div>
+        <!-- End of third row -->
+        
+                
+       
+        
+        
+            
+        <!-- Start of fourth row -->
+        <div class="row">
+        <div class="col-sm-12">
+        <div id="check"></div> 
+        </div>
+        </div>
+        <!-- End of fourth row -->
+    
+    
+    
+    </div>
+        
+    
+     
+        
+        
+    <script src="GuessingGame.js"></script>   
 </body>
-<script src="GuessingGame.js"></script>
+
 </html>
